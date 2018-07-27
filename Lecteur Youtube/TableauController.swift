@@ -16,6 +16,7 @@ class TableauController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Mes vidéos"
         tableView.delegate = self
         tableView.dataSource = self
         ajouterChanson()
@@ -35,7 +36,7 @@ class TableauController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 170
+        return 130
     }
     
     func ajouterChanson() {
